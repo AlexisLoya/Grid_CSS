@@ -1,0 +1,38 @@
+.container {
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    display: grid;
+    grid-template-columns:150px 150px 150px;
+    grid-auto-rows: 150px;
+    height: 600px;
+    gap: 15px;
+
+    place-content: center;
+
+    
+}
+
+.item {
+    border: 5px solid #57040f;
+    font-size: 4rem;
+}
+
+/** Challenge **/
+.container-reto {
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    display: grid;
+    grid-template-columns:150px 150px;
+    grid-auto-rows: 150px;
+    height: 600px;
+    place-content: center;
+
+    
+}
+
+.item {
+    border: 5px solid #57040f;
+    font-size: 4rem;
+    display: grid; 
+    place-content: flex-end;
+}
