@@ -1,0 +1,84 @@
+.container {
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    display: grid;
+    grid-template-columns:150px 150px 150px;
+    grid-template-rows: 75px 75px 75px;
+    place-content: center;
+    grid-template-areas:
+        "header header header"
+        "side main main"
+        "side main main";
+}
+
+.item {
+    font-size: 2rem;
+}
+
+.item-1 {
+    background-color: #bff8d2;
+    grid-column-start: 1;
+    /**grid-column-end: 4;**/
+    grid-area: header;
+}
+.item-2 {
+    background-color: #5ec5ab;
+    /* grid-row: 2 / 4; */
+    grid-area: side;
+
+
+}
+.item-3 {
+    background-color: #7052a0;
+    /* grid-area: 2 / 2 / 4 / 4; */
+    grid-area: main;
+}
+
+/** Challenge **/
+
+.container-reto {
+    display: grid;
+    grid-template-columns:150px 150px 150px;
+    grid-template-rows: 75px 75px 75px;
+    grid-template-areas:
+        "edge header header"
+        "side side middle"
+        "edge2 main main2";
+
+    
+}
+
+.it-1 {
+    background-color: #ffa43a;
+    grid-area: edge;
+    align-items: center;
+    justify-content: center;
+}
+.it-2 {
+    background-color: #ffbf75;
+    grid-area: header;
+}
+.it-3 {
+    background-color: #759eff;
+    grid-area: side;
+}
+
+.it-4 {
+    background-color: #ffa43a;
+    grid-area: middle;
+}
+
+.it-5 {
+    background-color: #ffa43a;
+    grid-area: edge2;
+}
+
+.it-6 {
+    background-color: #ffbf75;
+    grid-area: main;
+}
+
+.it-7 {
+    background-color: #759eff;
+    grid-area: main2;
+}
